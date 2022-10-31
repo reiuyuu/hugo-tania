@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/uncut-sans-2');
+@import url('https://fonts.cdnfonts.com/css/uncut-sans-2');
 
 @import url('https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap');
 
@@ -34,7 +34,8 @@
   --zh-hant-font-family: 'Noto Serif TC', serif;
   --code-font-family: 'Fira Code', Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-  --base-font-family: var(--en-font-family), var(--zh-hans-font-family);
+  --base-font-family: var(--en-font-family), sans-serif,
+    var(--zh-hans-font-family);
 }
 
 :lang(en) {
