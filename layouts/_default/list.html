@@ -1,7 +1,5 @@
-{{ define "main" }}
-
-{{ $pages := .Pages }}
-{{ $pages = (.Paginate $pages).Pages }}
+{{ define "main" }} {{ $pages := .Pages }} {{ $pages = (.Paginate $pages).Pages
+}}
 
 <header>
   <div class="container">
@@ -34,10 +32,8 @@
   </div>
 </section>
 
-{{- $scope := .Site }}
-{{- $paginator := .Paginate (where $scope.RegularPages ".Params.type" "!=" "page") }}
-
-{{- if gt $paginator.TotalPages 1}}
+{{- $scope := .Site }} {{- $paginator := .Paginate (where $scope.RegularPages
+".Params.type" "!=" "page") }} {{- if gt $paginator.TotalPages 1}}
 <section>
   <div class="container">
     <nav class="pagination">
@@ -45,8 +41,7 @@
       <div class="prev-page">
         <a href="{{ $paginator.Prev.URL }}">Previous Page</a>
       </div>
-      {{ end }}
-      {{- if $paginator.HasNext}}
+      {{ end }} {{- if $paginator.HasNext}}
       <div class="next-page">
         <a href="{{ $paginator.Next.URL }}">Next Page</a>
       </div>
@@ -54,6 +49,4 @@
     </nav>
   </div>
 </section>
-{{ end }}
-
-{{ end }}
+{{ end }} {{ end }}

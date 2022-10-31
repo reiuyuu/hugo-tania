@@ -1,11 +1,37 @@
-.my {
-    padding-top: 2rem;
-    a {
-        border: none;
-        margin-right: 1rem;
+.bio {
+  padding-top: 2rem;
+  margin-bottom: 2.8rem;
 
-        &:hover {
-            border: none;
-        }
+  section {
+    padding: 0 0 1rem 0;
+    margin: 0;
+    white-space: nowrap;
+
+    .text {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--h1-color);
     }
+
+    .desc {
+      font-size: 0.8rem;
+      font-weight: 300;
+      line-height: 0.75rem;
+      color: var(--heading-color);
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .bio {
+    section {
+      .text {
+        font-size: 2rem;
+      }
+
+      .desc {
+        font-size: 1.45rem;
+      }
+    }
+  }
 }

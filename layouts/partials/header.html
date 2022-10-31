@@ -2,22 +2,12 @@
     <div class="container">
         <div class="flex">
             <div>
-                <a class="brand" href="{{ relURL "/" }}">
-                    {{ with .Site.Params.titleEmoji }}
-                    <span class="emoji">
-                        {{ . }}
-                    </span>
-                    {{ end }}
-                    {{ with .Site.Params.titleLogo }}
-                        <img src="{{ . | relURL }}" />
-                    {{ end }}
-                    {{ .Site.Title }}
-                    </a>
+                <a class="brand" href="{{ relURL "/" }}">{{ .Site.Title }}</a>
             </div>
             <div class="flex">
-                {{ range .Site.Menus.header }}
+                {{/*  {{ range .Site.Menus.header }}
                 <a href="{{ .URL | relURL }}"{{ if eq .URL $.RelPermalink }} aria-current="page"{{ end }}>{{ .Pre }}{{ .Name }}{{ .Post }}</a>
-                {{ end }}
+                {{ end }}  */}}
                 {{ if (default true .Site.Params.colorScheme.toggle) }}
                     <button id="dark-mode-button">
                     {{ (resources.Get "icons/light.svg").Content | safeHTML }}

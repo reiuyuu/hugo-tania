@@ -1,43 +1,21 @@
 {{ define "main" }}
 <div class="container">
-    <article>
-        <header class="article-header">
-            <div class="thumb">
-                <div>
-                    <h1>{{ .Title }}</h1>
-                    <div class="post-meta">
-                        <div>
-                            <time>{{ .Date.Format "January 02, 2006" }}</time>
-                            | {{ .ReadingTime }} minutes
-                        </div>
-                    </div>
-                </div>
+  <article lang="{{ .Params.lang }}">
+    <header class="article-header">
+      <div class="thumb">
+        <div>
+          <h1>{{ .Title }}</h1>
+          <div class="post-meta">
+            <div>
+              <time>{{ .Date.Format "January 02, 2006" }}</time>
+              {{/* | {{ .ReadingTime }} minutes */}}
             </div>
-        </header>
-    </article>
+          </div>
+        </div>
+      </div>
+    </header>
 
-    <div class="article-post">
-    {{ .Content }}
-    </div>
-</div>
-
-<div class="container">
-    {{ if .Section }}
-    <nav class="flex container suggested">
-        {{ with .PrevInSection }}
-        <a rel="prev" href="{{ .RelPermalink }}" title="Previous post (older)">
-            <span>Previous</span>
-            {{ .Title }}
-            </a>
-        {{ end }}
-        
-        {{ with .NextInSection }}
-        <a rel="next" href="{{ .RelPermalink }}" title="Next post (newer)">
-            <span>Next</span>
-            {{ .Title }}
-            </a> 
-        {{ end }}
-    </nav>
-    {{ end }}
+    <div class="article-post">{{ .Content }}</div>
+  </article>
 </div>
 {{ end }}

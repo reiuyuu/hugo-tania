@@ -2,8 +2,6 @@ $code-font-size: 0.9rem !default;
 $code-color: #f8f8f2 !default;
 $code-background: #373b41 !default;
 $gray: #cacaca !default;
-// $code-font-family: Consolas, Monaco, Menlo, 'DejaVu Sans Mono',
-//   'Bitstream Vera Sans Mono', 'Courier New', monospace !default;
 $code-font-family: 'Ubuntu', Menlo, Monaco, Consolas, 'Courier New', monospace;
 
 code,
@@ -53,8 +51,12 @@ pre > code {
     line-height: 1.9;
     font-weight: bold;
     color: #b1b1b1;
-    background: darken($code-background, 3%);
+    // background: darken($code-background, 3%);
     content: attr(data-lang);
+  }
+
+  span {
+    font-family: var(--code-font-family);
   }
 
   table {

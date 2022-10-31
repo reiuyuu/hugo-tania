@@ -1,77 +1,51 @@
 /* Footer */
 
 .footer {
-    padding: 2rem 0;
+  padding: 1rem 0;
+  margin: 2rem 0;
 
-    >.flex {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+  .social {
+    .text {
+      font-size: 0.8rem;
+      font-weight: 300;
+      line-height: 1.125rem;
+      color: var(--heading-color);
     }
 
-    img {
-        height: 30px;
-        width: 30px;
-    }
+    .site {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--h1-color);
 
-    a {
-        border-radius: 0.35rem;
-        margin: 0 0.05rem;
-        font-weight: 400;
-        font-size: 1rem;
-        border: 1px solid transparent;
-        padding: 0.5rem;
-        margin: 0 0.5rem;
-        color: var(--light-font-color);
+      a {
+        margin-right: 0.4rem;
+        box-shadow: 0px -2px 0px rgba(161, 169, 175, 0.3) inset;
+        transition: all 0.3s ease;
 
         &:hover {
-            color: var(--heading-color);
-            background: var(--light-background);
+          box-shadow: 0px -5px 0px rgba(161, 169, 175, 0.6) inset;
         }
-
-        &.img {
-            display: flex;
-            align-items: center;
-            padding: 0;
-            margin: 0 0.75rem;
-            background: none;
-        }
+      }
     }
-}
-
-.footer-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.flex nav {
-    padding: 1rem 0;
+  }
 }
 
 @media screen and (min-width: 800px) {
-    .footer {
-        >.flex {
-            align-items: flex-start;
-            margin-left: -1.5rem;
-            margin-right: -1.5rem;
-        }
+  .footer {
+    .social {
+      .text {
+        font-size: 1em;
+      }
 
-        a {
-            padding: 0.75rem;
-
-            &.img {
-                padding: 0 0.5rem;
-                margin: 0 1rem;
-            }
-        }
+      .site {
+        font-size: 1.2rem;
+      }
     }
-
+  }
 }
 
 @media print {
-    .footer {
-        display: none;
-    }
+  .footer {
+    display: none;
+  }
 }

@@ -19,29 +19,31 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 0 0 1.5rem 0;
-  font-weight: 700;
+  margin: 0 0 1.125rem 0;
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1:not(:first-child),
-h2:not(:first-child),
+h2:not(:first-child) {
+  margin-top: 2.125rem;
+}
+
 h3:not(:first-child),
 h4:not(:first-child) {
-  margin-top: 3rem;
+  margin-top: 1.25rem;
 }
 
 h1 {
   font-size: 2.5rem;
-  line-height: 1.1;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 1.75rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 4px solid var(--light-background);
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
 
   code {
     font-size: 1.75rem !important;
@@ -49,9 +51,8 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
-  color: var(--font-color);
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 500;
   margin-bottom: 1rem;
 
   code {
@@ -61,8 +62,7 @@ h3 {
 
 h4 {
   font-size: 1.3rem;
-  color: var(--font-color);
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 1rem;
   border-bottom: 2px solid var(--light-background);
   padding-bottom: 0.25rem;
@@ -70,6 +70,7 @@ h4 {
 
 h5 {
   font-size: 1.2rem;
+  font-weight: 400;
   margin-bottom: 1rem;
 }
 
@@ -79,7 +80,7 @@ h5 {
   }
 
   h2 {
-    font-size: 1.9rem;
+    font-size: 2.125rem;
 
     code {
       font-size: 1.9rem !important;
@@ -87,9 +88,7 @@ h5 {
   }
 
   h3 {
-    font-size: 1.7rem;
-    color: var(--font-color);
-    font-weight: 600;
+    font-size: 1.75rem;
 
     code {
       font-size: 1.6rem !important;
@@ -97,7 +96,6 @@ h5 {
   }
 
   h4 {
-    font-weight: 400;
     font-size: 1.4rem;
   }
 }
