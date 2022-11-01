@@ -25,6 +25,7 @@ section {
     display: flex;
     align-items: center;
     font-size: 1.2rem;
+    letter-spacing: -0.4px;
     margin-top: 0;
     margin-bottom: 0.5rem;
   }
@@ -72,7 +73,7 @@ a.section-button {
     margin: 3.5rem 0;
 
     > h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin: 0 0 1rem;
     }
   }
@@ -103,6 +104,7 @@ img {
 
 img + em {
   padding-left: 12px;
+  font-size: 1rem;
 }
 
 p,
@@ -111,7 +113,7 @@ ul,
 dl,
 table,
 blockquote {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   margin-bottom: 1.25rem;
 }
 
