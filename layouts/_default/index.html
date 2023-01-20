@@ -3,7 +3,7 @@
 <div class="container">
   <section class="bio">
       <section>
-        <div class="text">Hi There! I'm yuu</div>
+        <div class="text">Hi There, I'm yuu</div>
       </section>
       <section>
         <div class="desc">yet another</div>
@@ -32,10 +32,9 @@
       <div class="post">
         <a href="{{ .RelPermalink }}">
           <div class="post-row">
-            <time>{{ .Date.Format "Jan 02" }}</time>
+            <time><i>{{ .Date.Format "Jan 02" }}</i></time>
             <h3 lang="{{ .Params.lang }}">{{ .Title }}</h3>
           </div>
-          <!--<div class="new-post">New!</div>-->
         </a>
       </div>
       {{ end }}

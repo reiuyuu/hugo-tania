@@ -50,7 +50,7 @@ section > h2 {
 }
 
 a.section-button {
-  font-weight: 500;
+  font-weight: 400;
   background: var(--light-background);
   color: var(--dark-font-color);
   padding: 0.4rem 0.6rem;
@@ -123,6 +123,10 @@ blockquote p {
 
 ul {
   padding: 0 1rem;
+}
+
+li {
+  list-style-type: circle;
 }
 
 @media screen and (min-width: 800px) {
