@@ -31,8 +31,7 @@
   </div>
 </section>
 
-{{- $scope := .Site }} {{- $paginator := .Paginate (where $scope.RegularPages
-".Params.type" "!=" "page") }} {{- if gt $paginator.TotalPages 1}}
+{{- $scope := .Site }} {{- $paginator := .Paginate (where $scope.RegularPages ".Params.type" "!=" "page") }} {{- if gt $paginator.TotalPages 1}}
 <section>
   <div class="container">
     <nav class="pagination">
